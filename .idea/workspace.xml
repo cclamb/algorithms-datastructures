@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a39275-23b1-4820-9ec1-8e96f980f154" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/python/crystal/test_stack.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/python/crystal/stack.py" afterPath="$PROJECT_DIR$/src/main/python/crystal/stack.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/python/crystal/test_stack.py" afterPath="$PROJECT_DIR$/src/test/python/crystal/test_stack.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algorithms-datastructures.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/stack.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365182615633" ignored="false" />
+    <file path="/stack.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365257668028" ignored="false" />
     <file path="/stack_test.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365197441237" ignored="false" />
-    <file path="/Dummy.txt" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365198661803" ignored="false" />
-    <file path="/test_stack.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365255093507" ignored="false" />
+    <file path="/Dummy.txt" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365255169693" ignored="false" />
+    <file path="/test_stack.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365257935905" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/__init__.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365198550183" ignored="false" />
     <file path="$PROJECT_DIR$/src/__init__.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365198550183" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/python/__init__.py" changelist="62a39275-23b1-4820-9ec1-8e96f980f154" time="1365198550183" ignored="false" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="stack.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/python/crystal/stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+            <state line="26" column="10" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,9 +43,9 @@
       <file leaf-file-name="test_stack.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/python/crystal/test_stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="29" selection-start="452" selection-end="452" vertical-scroll-proportion="0.47191012">
+            <state line="12" column="12" selection-start="268" selection-end="268" vertical-scroll-proportion="0.26966292">
               <folding>
-                <element signature="e#23#54#0" expanded="true" />
+                <element signature="e#23#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,10 +70,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/python/crystal/stack.py" />
-        <option value="$PROJECT_DIR$/src/main/python/crystal/stack.py" />
         <option value="$PROJECT_DIR$/src/main/python/crystal/stack_test.py" />
         <option value="$PROJECT_DIR$/src/main/python/crystal/test_stack.py" />
         <option value="$PROJECT_DIR$/src/test/python/crystal/stack_test.py" />
+        <option value="$PROJECT_DIR$/src/main/python/crystal/stack.py" />
         <option value="$PROJECT_DIR$/src/test/python/crystal/test_stack.py" />
       </list>
     </option>
@@ -175,6 +175,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="crystal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-datastructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-datastructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".venv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-datastructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-datastructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".venv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python3.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-datastructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-datastructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".venv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,7 +428,11 @@
       <created>1365198665751</created>
       <updated>1365198665751</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created test files">
+      <created>1365255172903</created>
+      <updated>1365255172903</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -463,16 +525,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/python/crystal/stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+        <state line="26" column="10" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.venv/pyvenv.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/python/crystal/test_stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="452" selection-end="452" vertical-scroll-proportion="0.47191012">
+        <state line="12" column="12" selection-start="268" selection-end="268" vertical-scroll-proportion="0.26966292">
           <folding>
-            <element signature="e#23#54#0" expanded="true" />
+            <element signature="e#23#58#0" expanded="true" />
           </folding>
         </state>
       </provider>

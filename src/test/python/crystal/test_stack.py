@@ -1,22 +1,44 @@
 __author__ = 'cclamb'
 
-from crystal.stack import Stack
+from crystal.stack import ListStack
+from crystal.stack import TupleStack
+from crystal.stack import StackType
+from crystal.stack import create_stack
+
 import unittest
 
-class InternalStack:
-    def __init__(self):
-        print("created")
-
-    def print(self):
-        print("from internalstack!")
-
-class StackTest(unittest.TestCase):
-    def test_creation(self):
-        self.assertIsNotNone(InternalStack())
-
-    def test_printer(self):
-        stack = InternalStack()
-        stack.print()
+class ListStackTest(unittest.TestCase):
 
     def test_stack(self):
-        self.assertIsNotNone(Stack())
+        pass
+
+    def test_push(self):
+        pass
+
+    def test_pop(self):
+        pass
+
+    def test_empty(self):
+        pass
+
+class ListStackTest(unittest.TestCase):
+
+    def test_stack(self):
+        pass
+
+    def test_push(self):
+        pass
+
+    def test_pop(self):
+        pass
+
+    def test_empty(self):
+        pass
+
+class CreateStackTest(unittest.TestCase):
+
+    def test_stack(self):
+        l_stack = create_stack(StackType.List)
+        self.assertTrue(type(l_stack) is ListStack)
+        t_stack = create_stack(StackType.Tuple)
+        self.assertTrue(type(t_stack) is TupleStack)
