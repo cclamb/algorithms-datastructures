@@ -1,6 +1,6 @@
 __author__ = 'cclamb'
 
-from crystal import stack
+from crystal.stack import Stack
 import unittest
 
 class InternalStack:
@@ -19,4 +19,4 @@ class StackTest(unittest.TestCase):
         stack.print()
 
     def test_stack(self):
-        self.assertIsNotNone(stack.Stack())
+        self.assertIsNotNone(Stack())
