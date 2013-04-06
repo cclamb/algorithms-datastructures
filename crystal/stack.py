@@ -29,10 +29,11 @@ class ListStack:
         self._list = []
 
     def empty(self):
-        pass
+        return True if (len(self._list) == 0) else False
 
-    def push(self):
-        pass
+    def push(self, o):
+        self._list.insert(0, o)
+        return self
 
     def pop(self):
-        pass
+        return self._list.pop(0)

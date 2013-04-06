@@ -10,18 +10,29 @@ import unittest
 class TestListStack(unittest.TestCase):
 
     def test_stack(self):
-        pass
+        self.assertIsNotNone(ListStack())
+
 
     def test_push(self):
-        pass
+        s = ListStack()
+        s.push(1).push(2).push(3)
+        self.assertFalse(s.empty())
+        o = s.pop();
+        self.assertEqual(o, 3)
 
     def test_pop(self):
-        pass
+        s = ListStack()
+        s.push(1).push(2).push(3)
+        self.assertFalse(s.empty())
+        o = s.pop();
+        self.assertEqual(o, 3)
 
     def test_empty(self):
-        pass
+        s = ListStack()
+        s.push(1).push(2).push(3)
+        self.assertFalse(s.empty())
 
-class TestListStack(unittest.TestCase):
+class TestTupleStack(unittest.TestCase):
 
     def test_stack(self):
         pass
