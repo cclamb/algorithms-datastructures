@@ -1,30 +1,17 @@
 __author__ = 'cclamb'
 
 class StackType:
-    List, Tuple = range(2)
+    DynamicList, AdjustableList = range(2)
 
 def create_stack(type):
-    if type == StackType.List:
-        return ListStack()
-    elif type == StackType.Tuple:
-        return TupleStack()
+    if type == StackType.DynamicList:
+        return DynamicListStack()
+    elif type == StackType.AdjustableList:
+        return None
     else:
         raise NameError("unknown stack type requested")
 
-class TupleStack:
-    def __init__(self):
-        self._list = []
-
-    def empty(self):
-        pass
-
-    def push(self):
-        pass
-
-    def pop(self):
-        pass
-
-class ListStack:
+class DynamicListStack:
     def __init__(self):
         self._list = []
 
@@ -36,4 +23,4 @@ class ListStack:
         return self
 
     def pop(self):
-        return self._list.pop(0)
+        return None if (len(self._list) == 0) else self._list.pop(0)
