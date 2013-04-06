@@ -7,7 +7,7 @@ from crystal.stack import create_stack
 
 import unittest
 
-class ListStackTest(unittest.TestCase):
+class TestListStack(unittest.TestCase):
 
     def test_stack(self):
         pass
@@ -21,7 +21,7 @@ class ListStackTest(unittest.TestCase):
     def test_empty(self):
         pass
 
-class ListStackTest(unittest.TestCase):
+class TestListStack(unittest.TestCase):
 
     def test_stack(self):
         pass
@@ -35,7 +35,7 @@ class ListStackTest(unittest.TestCase):
     def test_empty(self):
         pass
 
-class CreateStackTest(unittest.TestCase):
+class TestCreateStack(unittest.TestCase):
 
     def test_stack(self):
         l_stack = create_stack(StackType.List)
