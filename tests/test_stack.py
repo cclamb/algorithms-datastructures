@@ -1,16 +1,15 @@
 __author__ = 'cclamb'
 
+import unittest
+
 from crystal.stack import DynamicListStack
 from crystal.stack import StackType
 from crystal.stack import create_stack
-
-import unittest
 
 class TestListStack(unittest.TestCase):
 
     def test_stack(self):
         self.assertIsNotNone(DynamicListStack())
-
 
     def test_push(self):
         s = DynamicListStack()
@@ -38,7 +37,7 @@ class TestListStack(unittest.TestCase):
 class TestCreateStack(unittest.TestCase):
 
     def test_stack(self):
-        l_stack = create_stack(StackType.DynamicList)
+        l_stack = create_stack(StackType.Dynamic)
         self.assertTrue(type(l_stack) is DynamicListStack)
 
     def test_stack_bad_type(self):

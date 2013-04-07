@@ -1,15 +1,15 @@
 __author__ = 'cclamb'
 
-class StackType:
-    DynamicList, AdjustableList = range(2)
-
 def create_stack(type):
-    if type == StackType.DynamicList:
+    if type == StackType.Dynamic:
         return DynamicListStack()
-    elif type == StackType.AdjustableList:
+    elif type == StackType.Adjustable:
         return None
     else:
         raise NameError("unknown stack type requested")
+
+class StackType:
+    Dynamic, Adjustable = range(2)
 
 class DynamicListStack:
     def __init__(self):
