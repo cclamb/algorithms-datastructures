@@ -13,7 +13,11 @@ class ListType:
 
 class LinkedList:
 
-    _Record = namedtuple("_Record", "previous next key")
+    class _Record:
+        def __init__(self, prev = None, next = None, key = None):
+            self.prev = prev
+            self.next = next
+            self.key = key
 
     def __init__(self):
         self._head = None
@@ -26,11 +30,25 @@ class LinkedList:
 
     def insert(self, key):
         record = self._Record(self._head, None, key)
-        if (self._head != None):
-            self._head.next = record
-        else:
+        x = self._head
+
+        if (x == None):
             self._head = record
+            return self
+
+        while (x.next != None):
+            x = x.next
+
+        x.next = record
         return self
 
-    def delete(self):
-        pass
+    def delete(self, key):
+        if (self._head == None):
+            return self
+        x = self._head
+        while (x != None and x.key != key):
+            x = x.next
+        prev = x.prev
+        next = x.next
+        prev.next = next
+        return self
