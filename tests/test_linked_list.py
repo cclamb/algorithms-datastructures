@@ -11,6 +11,16 @@ class TestLinkedList(unittest.TestCase):
     def test_create(self):
         self.assertIsNotNone(LinkedList())
 
+    def test_insert(self):
+        l = LinkedList()
+        l.insert(1).insert(2).insert(3)
+
+    def test_search(self):
+        l = LinkedList()
+        l.insert(1).insert(2).insert(3)
+        r = l.search(2)
+        self.assertEqual(2, r.key)
+
 class TestCreateList(unittest.TestCase):
 
     def test_create_list(self):
