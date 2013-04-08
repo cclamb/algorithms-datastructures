@@ -1,6 +1,5 @@
 __author__ = 'cclamb'
 
-from collections import namedtuple
 
 def create_list(type):
     if type == ListType.LinkedList:
@@ -10,6 +9,7 @@ def create_list(type):
 
 class ListType:
     LinkedList  = range(1)
+
 
 class LinkedList:
 
