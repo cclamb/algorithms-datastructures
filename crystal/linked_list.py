@@ -16,14 +16,10 @@ class ListType:
 
 class _Record:
 
-    class Type:
-        Sentinel, Standard = range(2)
-
-    def __init__(self, prev=None, next=None, key=None, record_type=Type.Standard):
+    def __init__(self, prev=None, next=None, key=None):
         self.prev = prev
         self.next = next
         self.key = key
-        self.record_type = record_type
 
 
 class LinkedList:
@@ -61,12 +57,3 @@ class LinkedList:
         next_record = x.next
         prev_record.next = next_record
         return self
-
-
-class SentinelLinkedList:
-
-    def __init__(self):
-        head = _Record(None, None, None, _Record.Type.Sentinel)
-        tail = _Record(head, None, None, _Record.Type.Sentinel)
-        head.next = tail
-        self._head = [head, tail]
