@@ -6,6 +6,7 @@ from crystal.linked_list import LinkedList
 from crystal.linked_list import ListType
 from crystal.linked_list import create_list
 
+
 class TestLinkedList(unittest.TestCase):
 
     def test_create(self):

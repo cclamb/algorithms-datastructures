@@ -4,6 +4,7 @@ import unittest
 
 from crystal.hash_table import ChainedHashTable
 
+
 class TestChainedHashTable(unittest.TestCase):
 
     def test_create(self):
