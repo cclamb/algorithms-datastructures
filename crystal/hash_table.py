@@ -28,7 +28,7 @@ class ChainedHashTable:
             self._insert_list(key)
 
         record = ChainedHashTable._Record(k, v)
-        self._store[key].insert(record)
+        self._store[key].insert(0, record)
 
         return self
 
@@ -44,7 +44,7 @@ class ChainedHashTable:
         return int(bytes(k, 'utf-8')[0])
 
     def _insert_list(self, key):
-        self._store[key] = LinkedList()
+        self._store[key] = []
 
     def _is_slot_empty(self, idx):
         return self._store[idx] is None

@@ -34,6 +34,13 @@ class TestLinkedList(unittest.TestCase):
         self.assertEqual(1, l.search(1).key)
         self.assertEqual(3, l.search(3).key)
 
+    def test_different_keys(self):
+        l = LinkedList()
+        l.insert('foo').insert(1).insert(None)
+        self.assertEqual('foo', l.search('foo').key)
+        self.assertEqual(1, l.search(1).key)
+
+
 class TestCreateList(unittest.TestCase):
 
     def test_create_list(self):

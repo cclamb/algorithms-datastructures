@@ -44,6 +44,7 @@ class LinkedList:
         while x.next is not None:
             x = x.next
 
+        record.prev = x
         x.next = record
         return self
 

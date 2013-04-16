@@ -18,9 +18,9 @@ class TestChainedHashTable(unittest.TestCase):
     def test_insert_list(self):
         h = ChainedHashTable()
         h._insert_list(3)
-        h._store[3].insert(4)
-        x = h._store[3].search(4)
-        self.assertTrue(x.key, 4)
+        h._store[3].insert(0, 4)
+        x = h._store[3][0]
+        self.assertTrue(x, 4)
 
     def test_is_slot_empty(self):
         pass
