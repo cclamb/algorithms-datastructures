@@ -27,16 +27,34 @@ class ChainedHashTable:
         if self._is_slot_empty(key):
             self._insert_list(key)
 
-        record = ChainedHashTable._Record(k, v)
+        record = self._Record(k, v)
         self._store[key].insert(0, record)
 
         return self
 
-    def search(self):
-        pass
+    def search(self, k):
+        key = self._generate_key(k)
+        list = self._store[key]
 
-    def delete(self):
-        pass
+        if list is None:
+            return None
+
+        for r in list:
+            if r.key is k:
+                return r.value
+
+        return None
+
+    def delete(self, k):
+        key = self._generate_key(k)
+        list = self._store[key]
+
+        if list is None:
+            return
+
+        for r in list:
+            if r.key is k:
+                list.remove(r)
 
     def _generate_key(self, k):
         if type(k) is not str:

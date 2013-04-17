@@ -23,4 +23,22 @@ class TestChainedHashTable(unittest.TestCase):
         self.assertTrue(x, 4)
 
     def test_is_slot_empty(self):
-        pass
+        h = ChainedHashTable()
+        self.assertTrue(h._is_slot_empty(3))
+        h._insert_list(3)
+        self.assertFalse(h._is_slot_empty(3))
+
+    def test_search(self):
+        h = ChainedHashTable()
+        h.insert('foo', 1).insert('bar', 2)
+        self.assertEqual(1, h.search('foo'))
+        self.assertEqual(2, h.search('bar'))
+        self.assertIsNone(h.search('blech'))
+
+    def test_delete(self):
+        h = ChainedHashTable()
+        h.insert('foo', 1)
+        self.assertEqual(1, h.search('foo'))
+        h.delete('bar')
+        h.delete('foo')
+        self.assertIsNone(h.search('foo'))
